@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>プライバシーポリシー — Wellsteria LLC</title>
+  <meta name="description" content="Wellsteria LLC のアプリ「サンタ募集中」におけるプライバシーポリシー。">
+  <style>
+    :root {
+      --ink: #201a17;
+      --ink-soft: #5c534d;
+      --ink-faint: #8a8079;
+      --paper: #faf7f2;
+      --surface: #ffffff;
+      --line: #ece6dd;
+      --accent: #b4302b;
+      --accent-deep: #8f231f;
+      --wrap: 52rem;
+      --font: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Kaku Gothic ProN", "Yu Gothic", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+
+    body {
+      margin: 0;
+      font-family: var(--font);
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.75;
+      font-size: clamp(1rem, 0.96rem + 0.2vw, 1.0625rem);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .wrap {
+      width: 100%;
+      max-width: var(--wrap);
+      margin-inline: auto;
+      padding-inline: clamp(1.25rem, 5vw, 2.5rem);
+    }
+
+    a { color: var(--accent-deep); }
+
+    .site-head {
+      border-bottom: 1px solid var(--line);
+      background: color-mix(in srgb, var(--paper) 88%, transparent);
+      position: sticky;
+      top: 0;
+      backdrop-filter: saturate(120%) blur(8px);
+      z-index: 10;
+    }
+    .site-head .wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding-block: 1.1rem;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 0.55rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      text-decoration: none;
+      color: var(--ink);
+    }
+    .brand .mark {
+      width: 0.55rem;
+      height: 0.55rem;
+      border-radius: 50%;
+      background: var(--accent);
+      transform: translateY(-0.05rem);
+    }
+    .head-loc { color: var(--ink-faint); font-size: 0.9rem; }
+
+    main { padding-block: clamp(2.5rem, 2rem + 3vw, 4.5rem) clamp(3rem, 2.5rem + 3vw, 5rem); }
+
+    h1 {
+      font-size: clamp(1.9rem, 1.5rem + 1.8vw, 2.6rem);
+      line-height: 1.25;
+      letter-spacing: -0.02em;
+      margin: 0 0 0.4rem;
+    }
+    .lede { color: var(--ink-soft); margin: 0 0 0.25rem; }
+    .updated { color: var(--ink-faint); font-size: 0.9rem; margin: 0 0 2.75rem; }
+
+    h2 {
+      font-size: 1.2rem;
+      letter-spacing: -0.01em;
+      margin: 2.75rem 0 0.75rem;
+      padding-top: 1.75rem;
+      border-top: 1px solid var(--line);
+    }
+    h3 { font-size: 1.02rem; margin: 1.75rem 0 0.5rem; }
+    p, li { color: var(--ink-soft); }
+    p { margin: 0 0 1rem; }
+    ul, ol { margin: 0 0 1rem; padding-left: 1.35rem; }
+    li { margin-bottom: 0.4rem; }
+    strong { color: var(--ink); font-weight: 700; }
+
+    .table-scroll { overflow-x: auto; margin: 0 0 1.25rem; }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      min-width: 0;
+      font-size: 0.95rem;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+    }
+    th, td {
+      text-align: left;
+      padding: 0.7rem 0.9rem;
+      border-bottom: 1px solid var(--line);
+      color: var(--ink-soft);
+      vertical-align: top;
+    }
+    th { color: var(--ink); font-weight: 700; white-space: nowrap; }
+    tr:last-child th, tr:last-child td { border-bottom: 0; }
+
+    .note {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-left: 3px solid var(--accent);
+      border-radius: 10px;
+      padding: 1rem 1.15rem;
+      margin: 0 0 1.25rem;
+    }
+    .note p:last-child { margin-bottom: 0; }
+
+    .en { margin-top: 3.5rem; }
+    .en p, .en li { font-size: 0.95rem; }
+
+    footer {
+      border-top: 1px solid var(--line);
+      color: var(--ink-faint);
+      font-size: 0.9rem;
+    }
+    footer .wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding-block: 1.6rem;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --ink: #f2ece4;
+        --ink-soft: #b7aea4;
+        --ink-faint: #857c72;
+        --paper: #16130f;
+        --surface: #1e1a15;
+        --line: #2c2620;
+        --accent: #e06a5a;
+        --accent-deep: #ef8577;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap">
+      <a class="brand" href="/">
+        <span class="mark" aria-hidden="true"></span>
+        Wellsteria <span class="llc">LLC</span>
+      </a>
+      <span class="head-loc">Texas, USA</span>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <h1>プライバシーポリシー</h1>
+      <p class="lede">アプリ「サンタ募集中」における利用者の情報の取り扱いについて</p>
+      <p class="updated">最終更新日: 2026年8月22日</p>
+
+      <p>WELLSTERIA LLC（以下「当社」）は、iOS 向けアプリ「サンタ募集中」（以下「本アプリ」）における
+      利用者の情報の取り扱いについて、以下のとおり定めます。</p>
+
+      <h2>1. 事業者情報</h2>
+      <div class="table-scroll">
+        <table>
+          <tr><th>事業者名</th><td>WELLSTERIA LLC</td></tr>
+          <tr><th>所在地</th><td>2603 Kimbolton Dr, College Station, TX 77845-1233, U.S.A.</td></tr>
+          <tr><th>連絡先</th><td><a href="mailto:info@wellsteria.com">info@wellsteria.com</a></td></tr>
+        </table>
+      </div>
+
+      <h2>2. 取得する情報</h2>
+      <div class="note">
+        <p><strong>氏名・住所・電話番号・メールアドレスなど、利用者を直接特定する情報は取得しません。</strong>
+        また、<strong>広告の配信や広告のためのトラッキングは一切行いません。</strong></p>
+      </div>
+
+      <h3>2.1 アカウント識別子</h3>
+      <p>本アプリは、利用者が ID やパスワードを登録することなくゲームデータを保存できるよう、
+      <strong>匿名の識別子</strong>を自動的に発行します。この識別子は本アプリのデータ保存にのみ用いられ、
+      他のサービスの利用者情報とは結び付きません。</p>
+
+      <h3>2.2 ゲームの進行データ</h3>
+      <p>ゲームの進行状況（所持キャラクター、素材、配達履歴、ミニゲームの記録、購入済みコスチューム等）を
+      当社のサーバーに保存します。これは端末の機種変更や再インストール時にデータを引き継ぐためです。</p>
+
+      <h3>2.3 表示名（任意）</h3>
+      <p>ランキング機能で表示する名前を、利用者が任意に設定できます（1〜12文字）。
+      <strong>設定した名前は、ランキングを通じて他の利用者に公開されます。</strong>
+      本名の入力は不要であり、設定しないまま利用することもできます。</p>
+
+      <h3>2.4 購入情報</h3>
+      <p>アプリ内課金を行った場合、購入の正当性を確認するため、Apple から発行されるレシートおよび
+      取引 ID を当社のサーバーで検証し、購入した権利（サブスクリプションの有効期限、購入済みコスチューム等）を
+      保存します。<strong>クレジットカード番号などの決済情報は Apple が処理するもので、当社が取得することはありません。</strong></p>
+
+      <h3>2.5 利用状況の情報</h3>
+      <p>本アプリの改善のため、Google アナリティクス（Google Analytics for Firebase）を利用して、
+      以下の情報を自動的に収集します。</p>
+      <ul>
+        <li>アプリの起動・終了、画面の表示、利用時間などの操作ログ</li>
+        <li>アプリのインストール識別子および端末の識別子</li>
+        <li>端末の機種、OS のバージョン、言語設定</li>
+        <li>IP アドレスから推定される国・地域（位置情報の権限は要求しません）</li>
+      </ul>
+
+      <h2>3. 利用目的</h2>
+      <ol>
+        <li>ゲームデータの保存および端末間での引き継ぎ</li>
+        <li>ランキング機能の提供</li>
+        <li>アプリ内課金の正当性の確認と、購入した権利の付与・復元</li>
+        <li>不具合の把握と、ゲームバランス・操作性の改善</li>
+        <li>不正行為（スコアの改ざん、購入レシートの使い回し等）の検知と防止</li>
+      </ol>
+
+      <h2>4. 第三者への提供</h2>
+      <p>当社は、取得した情報を<strong>第三者に販売しません</strong>。
+      広告識別子（IDFA）は使用せず、アプリ間の行動追跡も行いません。
+      以下の事業者には、上記の目的の達成に必要な範囲で情報の取り扱いを委託しています。</p>
+      <div class="table-scroll">
+        <table>
+          <tr><th>委託先</th><th>委託する内容</th></tr>
+          <tr><td>Google LLC（Firebase / Google アナリティクス）</td><td>データの保存、匿名認証、利用状況の分析</td></tr>
+          <tr><td>Apple Inc.</td><td>アプリ内課金の決済処理およびレシートの検証</td></tr>
+        </table>
+      </div>
+      <p>法令に基づく開示請求があった場合を除き、これ以外の第三者に情報を提供することはありません。</p>
+
+      <h2>5. 情報の保存場所と期間</h2>
+      <ul>
+        <li>ゲームデータおよび購入の権利は、Google Cloud（Firebase）上に保存されます。</li>
+        <li>ゲームデータは、利用者から削除の申し出があるまで保存します。</li>
+        <li>利用状況の情報は、Google アナリティクスの設定に従って一定期間の経過後に自動的に削除されます。</li>
+      </ul>
+
+      <h2>6. 利用者の権利（開示・削除の請求）</h2>
+      <p>利用者は、当社が保有する自身のデータについて、開示・訂正・削除を求めることができます。
+      <a href="mailto:info@wellsteria.com">info@wellsteria.com</a> までご連絡ください。</p>
+      <div class="note">
+        <p>本アプリは匿名の識別子で動作しており、当社は利用者を特定する手段を持ちません。
+        ご請求の際は、アプリの<strong>設定画面に表示される「ユーザーID」</strong>をお知らせください
+        （設定画面の「コピー」ボタンで写せます）。</p>
+      </div>
+
+      <h2>7. お子様の利用について</h2>
+      <p>本アプリは、13 歳未満のお子様を対象として設計されたものではありません。
+      お子様を対象とした広告の配信や、行動ターゲティングは行っていません。</p>
+
+      <h2>8. 準拠法</h2>
+      <p>本ポリシーの解釈および適用は、日本国の個人情報の保護に関する法律その他の関係法令に従います。</p>
+
+      <h2>9. 本ポリシーの変更</h2>
+      <p>法令の改正やサービス内容の変更に伴い、本ポリシーを改定することがあります。
+      重要な変更を行う場合は、本ページへの掲載またはアプリ内での通知によりお知らせします。</p>
+
+      <section class="en">
+        <h2>English summary</h2>
+        <p>This is a summary for reference. The Japanese text above is the authoritative version.</p>
+        <p><strong>Santa Boshuchu</strong> (サンタ募集中), published by WELLSTERIA LLC, does not collect
+        names, addresses, phone numbers or email addresses. The app signs users in anonymously and stores
+        game progress, an optional public display name (1–12 characters, shown on leaderboards), and
+        in-app purchase entitlements on Firebase. Google Analytics for Firebase collects app lifecycle
+        events, installation and device identifiers, device model and OS version, and a country/region
+        estimated from a masked IP address. The app requests no location permission.</p>
+        <p><strong>The app contains no advertising, does not use the IDFA, and performs no cross-app
+        tracking.</strong> Data is never sold. Processors are Google LLC (Firebase, Analytics) and
+        Apple Inc. (in-app purchases). To request access to or deletion of your data, email
+        <a href="mailto:info@wellsteria.com">info@wellsteria.com</a> with the user ID shown on the
+        app's settings screen.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>© 2026 Wellsteria LLC</span>
+      <span>Texas, USA</span>
+    </div>
+  </footer>
+</body>
+</html>
+
