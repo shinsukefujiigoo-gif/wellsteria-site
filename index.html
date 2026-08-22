@@ -218,6 +218,12 @@
       justify-content: space-between;
     }
 
+      .foot-nav { display: inline-flex; gap: 1.2rem; }
+      .foot-nav a { color: var(--ink-faint); text-decoration: none;
+  border-bottom: 1px solid transparent; transition: color var(--ease) 0.25s,
+  border-color var(--ease) 0.25s; }
+      .foot-nav a:hover, .foot-nav a:focus-visible { color: var(--accent-deep);
+  border-color: var(--accent); outline: none; }
     :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 3px; }
 
     @media (prefers-color-scheme: dark) {
@@ -296,11 +302,13 @@
     </section>
   </main>
 
-  <footer>
-    <div class="wrap">
-      <span>&copy; 2026 Wellsteria LLC</span>
-      <span>Texas, USA</span>
-    </div>
-  </footer>
-</body>
-</html>
+    <footer>
+      <div class="wrap">
+        <span>&copy; 2026 Wellsteria LLC</span>
+        <nav class="foot-nav" aria-label="Footer">
+          <a href="/privacy/">Privacy</a>
+          <a href="/licenses/">Licenses</a>
+        </nav>
+        <span>Texas, USA</span>
+      </div>
+    </footer>
