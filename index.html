@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Wellsteria LLC — Independent Game Studio</title>
   <meta name="description" content="Wellsteria LLC is an independent game studio based in Texas, USA, crafting warm, character-driven games for iOS and Android.">
+  <link rel="alternate" hreflang="en" href="https://wellsteria.com/">
+  <link rel="alternate" hreflang="ja" href="https://wellsteria.com/ja/">
+  <link rel="alternate" hreflang="x-default" href="https://wellsteria.com/">
   <style>
     :root {
       --ink: #201a17;
@@ -82,6 +85,24 @@
       color: var(--ink-faint);
       letter-spacing: 0.02em;
     }
+    .head-right {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.9rem;
+    }
+    .lang {
+      font-size: 0.78rem;
+      letter-spacing: 0.02em;
+      text-decoration: none;
+      color: var(--ink-soft);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 0.3rem 0.7rem;
+      background: var(--surface);
+      transition: color 160ms var(--ease), border-color 160ms var(--ease);
+    }
+    .lang:hover, .lang:focus-visible { color: var(--accent-deep); border-color: var(--accent); }
+    @media (max-width: 30rem) { .head-loc { display: none; } }
 
     /* Hero */
     .hero { padding-block: clamp(4rem, 3rem + 8vw, 8rem) clamp(3rem, 2rem + 5vw, 6rem); }
@@ -248,7 +269,10 @@
         <span class="mark" aria-hidden="true"></span>
         Wellsteria <span class="llc">LLC</span>
       </a>
-      <span class="head-loc">Texas, USA</span>
+      <span class="head-right">
+        <span class="head-loc">Texas, USA</span>
+        <a class="lang" href="/ja/" hreflang="ja" lang="ja">日本語</a>
+      </span>
     </div>
   </header>
 
