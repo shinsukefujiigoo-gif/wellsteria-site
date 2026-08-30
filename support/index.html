@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>サポート — サンタ募集中 | Wellsteria LLC</title>
+  <meta name="description" content="アプリ「サンタ募集中」のサポートページ。お問い合わせ先とよくある質問。">
+  <style>
+    :root {
+      --ink: #201a17;
+      --ink-soft: #5c534d;
+      --ink-faint: #8a8079;
+      --paper: #faf7f2;
+      --surface: #ffffff;
+      --line: #ece6dd;
+      --accent: #b4302b;
+      --accent-deep: #8f231f;
+      --wrap: 52rem;
+      --font: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Kaku Gothic ProN", "Yu Gothic", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+
+    body {
+      margin: 0;
+      font-family: var(--font);
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.75;
+      font-size: clamp(1rem, 0.96rem + 0.2vw, 1.0625rem);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .wrap {
+      width: 100%;
+      max-width: var(--wrap);
+      margin-inline: auto;
+      padding-inline: clamp(1.25rem, 5vw, 2.5rem);
+    }
+
+    a { color: var(--accent-deep); }
+
+    .site-head {
+      border-bottom: 1px solid var(--line);
+      background: color-mix(in srgb, var(--paper) 88%, transparent);
+      position: sticky;
+      top: 0;
+      backdrop-filter: saturate(120%) blur(8px);
+      z-index: 10;
+    }
+    .site-head .wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding-block: 1.1rem;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 0.55rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      text-decoration: none;
+      color: var(--ink);
+    }
+    .brand .mark {
+      width: 0.55rem;
+      height: 0.55rem;
+      border-radius: 50%;
+      background: var(--accent);
+      transform: translateY(-0.05rem);
+    }
+    .head-loc { color: var(--ink-faint); font-size: 0.9rem; }
+
+    main { padding-block: clamp(2.5rem, 2rem + 3vw, 4.5rem) clamp(3rem, 2.5rem + 3vw, 5rem); }
+
+    h1 {
+      font-size: clamp(1.9rem, 1.5rem + 1.8vw, 2.6rem);
+      line-height: 1.25;
+      letter-spacing: -0.02em;
+      margin: 0 0 0.4rem;
+    }
+    .lede { color: var(--ink-soft); margin: 0 0 0.25rem; }
+    .updated { color: var(--ink-faint); font-size: 0.9rem; margin: 0 0 2.75rem; }
+
+    h2 {
+      font-size: 1.2rem;
+      letter-spacing: -0.01em;
+      margin: 2.75rem 0 0.75rem;
+      padding-top: 1.75rem;
+      border-top: 1px solid var(--line);
+    }
+    h3 { font-size: 1.02rem; margin: 1.75rem 0 0.5rem; }
+    p, li { color: var(--ink-soft); }
+    p { margin: 0 0 1rem; }
+    ul, ol { margin: 0 0 1rem; padding-left: 1.35rem; }
+    li { margin-bottom: 0.4rem; }
+    strong { color: var(--ink); font-weight: 700; }
+
+    .table-scroll { overflow-x: auto; margin: 0 0 1.25rem; }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      /* 幅を強制すると狭い画面で住所が切れて横スクロールになる。折り返させたほうが読める。
+         .table-scroll は将来列が増えたときの保険として残す。 */
+      min-width: 0;
+      font-size: 0.95rem;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+    }
+    th, td {
+      text-align: left;
+      padding: 0.7rem 0.9rem;
+      border-bottom: 1px solid var(--line);
+      color: var(--ink-soft);
+      vertical-align: top;
+    }
+    th { color: var(--ink); font-weight: 700; white-space: nowrap; }
+    tr:last-child th, tr:last-child td { border-bottom: 0; }
+
+    .note {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-left: 3px solid var(--accent);
+      border-radius: 10px;
+      padding: 1rem 1.15rem;
+      margin: 0 0 1.25rem;
+    }
+    .note p:last-child { margin-bottom: 0; }
+
+    .en { margin-top: 3.5rem; }
+    .en p, .en li { font-size: 0.95rem; }
+
+    footer {
+      border-top: 1px solid var(--line);
+      color: var(--ink-faint);
+      font-size: 0.9rem;
+    }
+    footer .wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding-block: 1.6rem;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --ink: #f2ece4;
+        --ink-soft: #b7aea4;
+        --ink-faint: #857c72;
+        --paper: #16130f;
+        --surface: #1e1a15;
+        --line: #2c2620;
+        --accent: #e06a5a;
+        --accent-deep: #ef8577;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap">
+      <a class="brand" href="/">
+        <span class="mark" aria-hidden="true"></span>
+        Wellsteria <span class="llc">LLC</span>
+      </a>
+      <span class="head-loc">Texas, USA</span>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <h1>サポート</h1>
+      <p class="lede">アプリ「サンタ募集中」についてのお問い合わせとよくある質問</p>
+      <p class="updated">最終更新日: 2026年8月30日</p>
+
+      <div class="note">
+        <p><strong>お問い合わせ:</strong> <a href="mailto:info@wellsteria.com">info@wellsteria.com</a></p>
+        <p>日本語・英語で承ります。営業日（米国中部時間）に順次ご返信します。
+        不具合のご報告では、下の「ユーザーID」を添えていただけると調査が早くなります。</p>
+      </div>
+
+      <h2>お問い合わせの前に</h2>
+
+      <h3>ユーザーIDの確認方法</h3>
+      <p>本アプリはアカウント登録なしで遊べるため、当社側でお客様を特定する手段がありません。
+      お問い合わせやデータ削除のご依頼では、アプリ内で発行されるユーザーIDをお知らせください。</p>
+      <ol>
+        <li>ホーム画面左上の歯車アイコンから<strong>設定</strong>を開く</li>
+        <li>下部の<strong>「ユーザーID（お問い合わせ用）」</strong>の右にある<strong>「コピー」</strong>を押す</li>
+        <li>メール本文に貼り付けて送信する</li>
+      </ol>
+      <p>通信できない状態では表示されないことがあります。その場合は電波の届く場所でアプリを起動し直してください。</p>
+
+      <h2>よくある質問</h2>
+
+      <h3>機種変更したい／別の端末で続きから遊びたい</h3>
+      <p>設定画面の<strong>「アカウント連携（機種変更の引き継ぎ）」</strong>から
+      <strong>「Appleでサインイン」</strong>を行ってください。連携しておくと、
+      新しい端末で同じ Apple ID にサインインするだけで進行状況と購入内容を引き継げます。</p>
+      <p>新しい端末ですでに遊び始めていた場合は、<strong>そちらの進行状況が引き継ぎ元のデータに置き換わります</strong>。
+      確認画面が出ますので、内容をご確認のうえお進みください。</p>
+
+      <h3>購入したのに反映されない／再インストールしたら消えた</h3>
+      <p>通信環境の良い場所でアプリを起動し直すと、購入内容の再確認が行われます。
+      それでも反映されない場合は、ショップ画面の復元操作をお試しください。
+      解決しないときは、ユーザーIDと購入日時を添えてメールでご連絡ください。</p>
+
+      <h3>データを削除してほしい</h3>
+      <p>ユーザーIDを添えて <a href="mailto:info@wellsteria.com">info@wellsteria.com</a> までご連絡ください。
+      当社が保管しているセーブデータ等を削除します。詳しくは
+      <a href="/privacy/">プライバシーポリシー</a>をご覧ください。</p>
+
+      <h3>返金してほしい</h3>
+      <p>App Store での購入の返金は Apple が受け付けています。
+      <a href="https://reportaproblem.apple.com/">reportaproblem.apple.com</a> からお手続きください。
+      当社では直接の返金処理はできません。</p>
+
+      <h3>ゲームの進み方がわからない</h3>
+      <p>ゲーム内の1年は1月から始まります。<strong>1月から4月は訓練の期間</strong>で、
+      エルフ・トナカイ・ドワーフを一人前に育てます。手紙が届いて配達が始まるのは<strong>5月</strong>からです。
+      「時を進める」で週が進み、しばらく時間を置くとまた進められるようになります。</p>
+
+      <h3>最初からやり直したい／アプリを消しても進行が戻らない</h3>
+      <p>アプリを削除して入れ直しても、進行状況は元に戻りません（端末に残る識別子から同じデータを読み直すためです）。
+      新しくやり直したいときは、設定画面の<strong>「はじめから」</strong>を押してください。
+      確認画面で<strong>「やり直す」</strong>を選ぶと、1月・キャラクターなしの状態から始まります。</p>
+      <p>いまの進行（月・キャラクター・プレゼント・ツリー）は<strong>すべて消えて元に戻せません</strong>。
+      購入したサブスク・月次パス・コスチュームは消えずに残ります。</p>
+
+      <h3>不具合を見つけた</h3>
+      <p>次の3点を添えてご連絡いただけると助かります。
+      ①ユーザーID ②お使いの端末と iOS のバージョン ③どの画面で何をしたときに起きたか。</p>
+
+      <h2>関連ページ</h2>
+      <ul>
+        <li><a href="/privacy/">プライバシーポリシー</a></li>
+        <li><a href="/licenses/">ライセンス表記</a></li>
+      </ul>
+
+      <section class="en">
+        <h2>Support (English)</h2>
+        <p>For questions about the app &quot;Santa Bosyuchu&quot;, please contact
+        <a href="mailto:info@wellsteria.com">info@wellsteria.com</a>.
+        Include the user ID shown in the app&apos;s Settings screen so we can look up your data.</p>
+        <p>Refunds for App Store purchases are handled by Apple at
+        <a href="https://reportaproblem.apple.com/">reportaproblem.apple.com</a>.
+        To transfer your progress to a new device, use <strong>Sign in with Apple</strong> in Settings.</p>
+        <p>Deleting the app does not reset your progress. To start over, tap
+        <strong>&quot;はじめから&quot; (Start Over)</strong> in Settings and confirm.
+        Your purchases are kept; your in-game progress is erased and cannot be recovered.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>&copy; 2026 WELLSTERIA LLC</span>
+      <span><a href="/privacy/">プライバシーポリシー</a> · <a href="/licenses/">ライセンス表記</a></span>
+    </div>
+  </footer>
+</body>
+</html>
