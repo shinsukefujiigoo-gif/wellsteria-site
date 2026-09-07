@@ -3,11 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Wellsteria LLC — 独立系ゲームスタジオ</title>
-  <meta name="description" content="Wellsteria LLC は米国テキサス州の独立系ゲームスタジオです。iOS / Android 向けに、キャラクターが息づくホッとするゲームを作っています。">
-  <link rel="alternate" hreflang="en" href="https://wellsteria.com/">
-  <link rel="alternate" hreflang="ja" href="https://wellsteria.com/ja/">
-  <link rel="alternate" hreflang="x-default" href="https://wellsteria.com/">
+  <title>サンタ募集中 — Wellsteria LLC</title>
+  <meta name="description" content="サンタクロース候補、募集中。エルフとトナカイを育てて、世界中の子どもたちに1年かけてプレゼントを届ける、のんびり育成シミュレーション。iOS / Android。">
+  <link rel="canonical" href="https://wellsteria.com/santa/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="サンタ募集中">
+  <meta property="og:description" content="サンタクロース候補、募集中。エルフとトナカイを育てて、世界中の子どもたちに1年かけてプレゼントを届ける、のんびり育成シミュレーション。">
+  <meta property="og:url" content="https://wellsteria.com/santa/">
+  <meta property="og:site_name" content="Wellsteria LLC">
+  <meta name="twitter:card" content="summary_large_image">
   <style>
     :root {
       --ink: #201a17;
@@ -33,7 +37,7 @@
       font-family: var(--font);
       color: var(--ink);
       background: var(--paper);
-      line-height: 1.65;
+      line-height: 1.75;
       font-size: clamp(1rem, 0.96rem + 0.2vw, 1.0625rem);
       -webkit-font-smoothing: antialiased;
     }
@@ -110,25 +114,23 @@
       display: inline-block;
       font-size: 0.78rem;
       letter-spacing: 0.16em;
-      text-transform: uppercase;
       color: var(--accent-deep);
       font-weight: 600;
       margin: 0 0 1.4rem;
     }
     .hero h1 {
       font-size: clamp(2.6rem, 1.4rem + 6vw, 5rem);
-      line-height: 1.02;
-      letter-spacing: -0.035em;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
       font-weight: 700;
       margin: 0 0 1.3rem;
-      max-width: 14ch;
     }
     .hero .lede {
       font-size: clamp(1.15rem, 1.05rem + 0.6vw, 1.5rem);
       color: var(--ink-soft);
-      max-width: 46ch;
-      margin: 0;
-      line-height: 1.5;
+      max-width: 34ch;
+      margin: 0 0 2rem;
+      line-height: 1.6;
     }
 
     /* Sections */
@@ -142,31 +144,17 @@
       font-weight: 600;
       margin: 0 0 1.6rem;
     }
-    .col-lead {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr);
-      gap: 1.2rem;
-    }
     h2 {
       font-size: clamp(1.6rem, 1.3rem + 1.4vw, 2.3rem);
-      letter-spacing: -0.02em;
-      line-height: 1.12;
+      letter-spacing: -0.01em;
+      line-height: 1.35;
       margin: 0 0 0.4rem;
       font-weight: 700;
     }
-    .prose { max-width: 54ch; color: var(--ink-soft); }
+    .prose { max-width: 40em; color: var(--ink-soft); }
     .prose p { margin: 0 0 1rem; }
     .prose p:last-child { margin-bottom: 0; }
 
-    /* Product card */
-    .product {
-      margin-top: 2.5rem;
-      background: var(--surface);
-      border: 1px solid var(--line);
-      border-radius: 1.1rem;
-      padding: clamp(1.75rem, 1.2rem + 2vw, 3rem);
-      box-shadow: 0 1px 2px rgba(32, 26, 23, 0.04), 0 18px 40px -28px rgba(32, 26, 23, 0.35);
-    }
     .status {
       display: inline-flex;
       align-items: center;
@@ -174,7 +162,6 @@
       font-size: 0.78rem;
       font-weight: 600;
       letter-spacing: 0.06em;
-      text-transform: uppercase;
       color: var(--accent-deep);
       background: color-mix(in srgb, var(--accent) 9%, transparent);
       border: 1px solid color-mix(in srgb, var(--accent) 24%, transparent);
@@ -186,20 +173,53 @@
       border-radius: 50%;
       background: var(--accent);
     }
-    .product h3 {
-      font-size: clamp(1.7rem, 1.3rem + 1.8vw, 2.5rem);
-      letter-spacing: -0.02em;
-      margin: 1.3rem 0 0.15rem;
-      line-height: 1.1;
-      font-weight: 700;
+
+    /* 特徴カード */
+    .facts {
+      margin-top: 2.5rem;
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     }
-    .product .subtitle {
-      color: var(--ink-faint);
-      font-size: 1rem;
-      margin: 0 0 1.2rem;
-      letter-spacing: 0.01em;
+    .fact {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 1.1rem;
+      padding: clamp(1.4rem, 1.1rem + 1vw, 1.9rem);
+      box-shadow: 0 1px 2px rgba(32, 26, 23, 0.04), 0 18px 40px -28px rgba(32, 26, 23, 0.35);
     }
-    .product .prose { max-width: 56ch; }
+    .fact h3 {
+      font-size: 1.05rem;
+      margin: 0 0 0.5rem;
+      letter-spacing: -0.01em;
+      line-height: 1.5;
+    }
+    .fact p {
+      margin: 0;
+      color: var(--ink-soft);
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    /* 配信情報 */
+    .platforms {
+      margin-top: 2rem;
+      display: grid;
+      gap: 0.8rem;
+      max-width: 34rem;
+    }
+    .platform {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 0.9rem 1.2rem;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 0.8rem;
+    }
+    .platform .name { font-weight: 600; }
+    .platform .state { color: var(--ink-faint); font-size: 0.88rem; }
 
     /* Contact */
     .contact .wrap { display: grid; gap: 1.3rem; }
@@ -238,13 +258,15 @@
       align-items: baseline;
       justify-content: space-between;
     }
+    .foot-nav { display: inline-flex; gap: 1.2rem; }
+    .foot-nav a {
+      color: var(--ink-faint);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: color var(--ease) 0.25s, border-color var(--ease) 0.25s;
+    }
+    .foot-nav a:hover, .foot-nav a:focus-visible { color: var(--accent-deep); border-color: var(--accent); outline: none; }
 
-      .foot-nav { display: inline-flex; gap: 1.2rem; }
-      .foot-nav a { color: var(--ink-faint); text-decoration: none;
-  border-bottom: 1px solid transparent; transition: color var(--ease) 0.25s,
-  border-color var(--ease) 0.25s; }
-      .foot-nav a:hover, .foot-nav a:focus-visible { color: var(--accent-deep);
-  border-color: var(--accent); outline: none; }
     :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 3px; }
 
     @media (prefers-color-scheme: dark) {
@@ -258,7 +280,7 @@
         --accent: #e06a5a;
         --accent-deep: #ef8577;
       }
-      .product { box-shadow: 0 1px 2px rgba(0,0,0,0.3), 0 22px 46px -28px rgba(0,0,0,0.7); }
+      .fact { box-shadow: 0 1px 2px rgba(0,0,0,0.3), 0 22px 46px -28px rgba(0,0,0,0.7); }
     }
   </style>
 </head>
@@ -270,7 +292,7 @@
         Wellsteria <span class="llc">LLC</span>
       </a>
       <span class="head-right">
-        <span class="head-loc">米国テキサス州</span>
+        <span class="head-loc">Texas, USA</span>
         <a class="lang" href="/" hreflang="en" lang="en">English</a>
       </span>
     </div>
@@ -279,34 +301,58 @@
   <main>
     <section class="hero" aria-labelledby="hero-heading">
       <div class="wrap">
-        <span class="eyebrow">Independent Game Studio</span>
-        <h1 id="hero-heading">小さなスタジオ、<br>ホッとするゲーム。</h1>
-        <p class="lede">Wellsteria LLC は米国テキサス州の独立系ゲームスタジオです。キャラクターが息づくモバイルゲームを、ひとつずつ手を掛けて作っています。</p>
+        <span class="eyebrow">育成シミュレーション</span>
+        <h1 id="hero-heading">サンタ募集中</h1>
+        <p class="lede">サンタクロース候補、募集中。</p>
+        <span class="status"><span class="dot" aria-hidden="true"></span>近日公開</span>
       </div>
     </section>
 
     <section aria-labelledby="about-heading">
       <div class="wrap">
         <p class="kicker">About</p>
-        <div class="col-lead">
-          <h2 id="about-heading">何度でも帰ってきたくなるゲームを。</h2>
-          <div class="prose">
-            <p>Wellsteria LLC は米国テキサス州を拠点とする独立系スタジオです。iOS / Android 向けのオリジナルゲームを企画・開発しています。急かさず、長く付き合える遊びを大切にしています。</p>
-            <p>自己資金の小さなチームで、いま1作目を作っています。作り込みと仕上げ、そして遊ぶ人に誠実な設計を大事にしています。</p>
+        <h2 id="about-heading">1年かけて、世界中に届ける。</h2>
+        <div class="prose">
+          <p>エルフやトナカイ、ドワーフを仲間にして、プレゼントを作り、世界中の子どもたちに届ける育成シミュレーションです。ゲーム内の1年は1月から始まります。はじめの数か月は配達の準備期間。仲間を訓練し、素材を育て、ソリを整えて、その時期が来たら世界へ出発します。</p>
+          <p>1日に何時間も遊ぶゲームではありません。朝と夜に少し様子を見て、また明日。そういう距離感で、まる1年をゆっくり進んでいきます。</p>
+        </div>
+
+        <div class="facts">
+          <div class="fact">
+            <h3>仲間を訓練する</h3>
+            <p>エルフ・トナカイ・ドワーフを一人ずつ育てます。誰に何を教えるかで、その年の回り方が変わります。</p>
+          </div>
+          <div class="fact">
+            <h3>手紙が届く</h3>
+            <p>世界中の子どもから手紙が届きます。ほっこりする願いも、思わず笑ってしまう願いも。読んだ手紙はカードにして残せます。</p>
+          </div>
+          <div class="fact">
+            <h3>月ごとに違う遊び</h3>
+            <p>毎月あらわれる妨害者との対決は、12か月それぞれ別のミニゲーム。同じ月は二度と来ません。</p>
+          </div>
+          <div class="fact">
+            <h3>クリスマスツリーが育つ</h3>
+            <p>配達するたびにオーナメントが1つ増えます。1年ぶんの積み重ねが、そのまま1本のツリーになります。</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section aria-labelledby="product-heading">
+    <section aria-labelledby="platform-heading">
       <div class="wrap">
-        <p class="kicker">In Development</p>
-        <div class="product">
-          <span class="status"><span class="dot" aria-hidden="true"></span>近日公開</span>
-          <h3 id="product-heading">サンタ募集中</h3>
-          <p class="subtitle">allYear Santa — 開発中</p>
-          <div class="prose">
-            <p>iOS / Android 向けのサンタクロース育成シミュレーションです。エルフやトナカイ、仲間たちを迎えて一人前に育て、季節をまたいでプレゼントを作り、ゲーム内の1年をかけて世界中の街へ届けます。毎日少しずつ、のんびり遊べるゲームです。</p>
+        <p class="kicker">配信</p>
+        <h2 id="platform-heading">配信予定</h2>
+        <div class="prose">
+          <p>準備ができ次第、審査を経て公開します。公開日が決まりましたら、このページと <a href="https://wellsteria.com/">Wellsteria LLC</a> でお知らせします。</p>
+        </div>
+        <div class="platforms">
+          <div class="platform">
+            <span class="name">iOS / iPadOS</span>
+            <span class="state">App Store・準備中</span>
+          </div>
+          <div class="platform">
+            <span class="name">Android</span>
+            <span class="state">Google Play・iOS 版のあとに予定</span>
           </div>
         </div>
       </div>
@@ -315,11 +361,9 @@
     <section class="contact" aria-labelledby="contact-heading">
       <div class="wrap">
         <p class="kicker">Contact</p>
-        <h2 id="contact-heading">お気軽にご連絡ください。</h2>
+        <h2 id="contact-heading">お問い合わせ</h2>
         <div class="prose">
-          <p>一般のお問い合わせ・取材・お取引は、メールで承ります。</p>
-          <p>「サンタ募集中」をプレイ中の方は
-          <a href="/support/">サポートページ</a>をご覧ください（よくある質問・不具合のご報告・データ削除のご依頼）。</p>
+          <p>ゲームについてのご質問・不具合のご報告・取材のご相談は、メールでお願いします。よくある質問とデータの取り扱いについては <a href="/support/">サポートページ</a> をご覧ください。</p>
         </div>
         <a class="mail" href="mailto:info@wellsteria.com">
           info@wellsteria.com <span class="arrow" aria-hidden="true">→</span>
@@ -328,16 +372,16 @@
     </section>
   </main>
 
-    <footer>
-      <div class="wrap">
-        <span>&copy; 2026 Wellsteria LLC</span>
-        <nav class="foot-nav" aria-label="Footer">
-          <a href="/support/">サポート</a>
-          <a href="/privacy/">プライバシーポリシー</a>
-          <a href="/licenses/">ライセンス表記</a>
-        </nav>
-        <span>米国テキサス州</span>
-        </div>
-      </footer>
-  </body>
-  </html>
+  <footer>
+    <div class="wrap">
+      <span>&copy; 2026 Wellsteria LLC</span>
+      <nav class="foot-nav" aria-label="フッター">
+        <a href="/support/">サポート</a>
+        <a href="/privacy/">プライバシー</a>
+        <a href="/licenses/">ライセンス</a>
+      </nav>
+      <span>Texas, USA</span>
+    </div>
+  </footer>
+</body>
+</html>
