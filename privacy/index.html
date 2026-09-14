@@ -103,6 +103,8 @@
     table {
       border-collapse: collapse;
       width: 100%;
+      /* 幅を強制すると狭い画面で住所が切れて横スクロールになる。折り返させたほうが読める。
+         .table-scroll は将来列が増えたときの保険として残す。 */
       min-width: 0;
       font-size: 0.95rem;
       background: var(--surface);
@@ -174,7 +176,7 @@
     <div class="wrap">
       <h1>プライバシーポリシー</h1>
       <p class="lede">アプリ「サンタ募集中」における利用者の情報の取り扱いについて</p>
-      <p class="updated">最終更新日: 2026年8月22日</p>
+      <p class="updated">最終更新日: 2026年9月14日</p>
 
       <p>WELLSTERIA LLC（以下「当社」）は、iOS 向けアプリ「サンタ募集中」（以下「本アプリ」）における
       利用者の情報の取り扱いについて、以下のとおり定めます。</p>
@@ -198,6 +200,9 @@
       <p>本アプリは、利用者が ID やパスワードを登録することなくゲームデータを保存できるよう、
       <strong>匿名の識別子</strong>を自動的に発行します。この識別子は本アプリのデータ保存にのみ用いられ、
       他のサービスの利用者情報とは結び付きません。</p>
+      <p>機種変更の引き継ぎのために、任意で <strong>Sign in with Apple</strong> と連携できます。連携した場合は、
+      Apple が本アプリ向けに発行する利用者ごとの識別子だけを保存します。<strong>メールアドレスや氏名は Apple に求めておらず、
+      取得しません。</strong></p>
 
       <h3>2.2 ゲームの進行データ</h3>
       <p>ゲームの進行状況（所持キャラクター、素材、配達履歴、ミニゲームの記録、購入済みコスチューム等）を
@@ -207,6 +212,9 @@
       <p>ランキング機能で表示する名前を、利用者が任意に設定できます（1〜12文字）。
       <strong>設定した名前は、ランキングを通じて他の利用者に公開されます。</strong>
       本名の入力は不要であり、設定しないまま利用することもできます。</p>
+      <p>不適切な表示名を防ぐため、差別・暴力・性的な表現や宣伝などを含む名前はサーバーで受け付けません。
+      また、他の利用者は不適切な表示名を通報でき、通報された表示名は運営者が確認のうえ、
+      すべての利用者の画面から消すことがあります（2 人以上から通報された場合は自動で消えます）。</p>
 
       <h3>2.4 購入情報</h3>
       <p>アプリ内課金を行った場合、購入の正当性を確認するため、Apple から発行されるレシートおよび
@@ -223,6 +231,12 @@
         <li>IP アドレスから推定される国・地域（位置情報の権限は要求しません）</li>
       </ul>
 
+      <h3>2.6 通報の記録</h3>
+      <p>ランキングの表示名を通報した場合、<strong>通報した利用者と通報された利用者の匿名の識別子、
+      通報時点の表示名、通報の日時</strong>を記録します。記録は不適切な表示名への対応にのみ用い、
+      通報があったことを運営者にメールで知らせます。通報した利用者が誰であるかを、
+      通報された利用者や他の利用者に知らせることはありません。</p>
+
       <h2>3. 利用目的</h2>
       <ol>
         <li>ゲームデータの保存および端末間での引き継ぎ</li>
@@ -230,6 +244,7 @@
         <li>アプリ内課金の正当性の確認と、購入した権利の付与・復元</li>
         <li>不具合の把握と、ゲームバランス・操作性の改善</li>
         <li>不正行為（スコアの改ざん、購入レシートの使い回し等）の検知と防止</li>
+        <li>不適切な表示名への対応（通報の受付と、運営者への通知）</li>
       </ol>
 
       <h2>4. 第三者への提供</h2>
@@ -240,7 +255,8 @@
         <table>
           <tr><th>委託先</th><th>委託する内容</th></tr>
           <tr><td>Google LLC（Firebase / Google アナリティクス）</td><td>データの保存、匿名認証、利用状況の分析</td></tr>
-          <tr><td>Apple Inc.</td><td>アプリ内課金の決済処理およびレシートの検証</td></tr>
+          <tr><td>Apple Inc.</td><td>アプリ内課金の決済処理およびレシートの検証、Sign in with Apple による連携</td></tr>
+          <tr><td>Zoho Corporation（Zoho Mail）</td><td>通報を運営者に知らせるメールの送信（通報された表示名と識別子）</td></tr>
         </table>
       </div>
       <p>法令に基づく開示請求があった場合を除き、これ以外の第三者に情報を提供することはありません。</p>
@@ -248,12 +264,17 @@
       <h2>5. 情報の保存場所と期間</h2>
       <ul>
         <li>ゲームデータおよび購入の権利は、Google Cloud（Firebase）上に保存されます。</li>
-        <li>ゲームデータは、利用者から削除の申し出があるまで保存します。</li>
+        <li>ゲームデータは、利用者がアカウントを削除するか、削除の申し出があるまで保存します。</li>
+        <li>通報の記録は、対応が済んだ後も同じ不正の再発を防ぐために保存し、通報した利用者または
+        通報された利用者がアカウントを削除したときに削除します。</li>
         <li>利用状況の情報は、Google アナリティクスの設定に従って一定期間の経過後に自動的に削除されます。</li>
       </ul>
 
       <h2>6. 利用者の権利（開示・削除の請求）</h2>
-      <p>利用者は、当社が保有する自身のデータについて、開示・訂正・削除を求めることができます。
+      <p><strong>アカウントとデータは、アプリの設定画面の「アカウントを削除」からいつでも削除できます。</strong>
+      進行・ランキング・購入の記録・通報の記録・認証情報が当社のサーバーから削除され、Apple と連携している場合は
+      その連携も取り消されます（取引の重複利用を防ぐための購入台帳は、利用者との紐付けを外して保持します）。</p>
+      <p>このほか、当社が保有する自身のデータについて、開示・訂正・削除を求めることができます。
       <a href="mailto:info@wellsteria.com">info@wellsteria.com</a> までご連絡ください。</p>
       <div class="note">
         <p>本アプリは匿名の識別子で動作しており、当社は利用者を特定する手段を持ちません。
@@ -278,12 +299,17 @@
         <p><strong>Santa Boshuchu</strong> (サンタ募集中), published by WELLSTERIA LLC, does not collect
         names, addresses, phone numbers or email addresses. The app signs users in anonymously and stores
         game progress, an optional public display name (1–12 characters, shown on leaderboards), and
-        in-app purchase entitlements on Firebase. Google Analytics for Firebase collects app lifecycle
+        in-app purchase entitlements on Firebase. Players may optionally link Sign in with Apple to move
+        progress to a new device; only the app-specific identifier Apple issues is stored (no email or
+        name is requested). Display names containing objectionable words are rejected, and players can
+        report names; a report records the anonymous identifiers of both players, the reported name and
+        the time, and notifies the operator by email. Google Analytics for Firebase collects app lifecycle
         events, installation and device identifiers, device model and OS version, and a country/region
         estimated from a masked IP address. The app requests no location permission.</p>
         <p><strong>The app contains no advertising, does not use the IDFA, and performs no cross-app
-        tracking.</strong> Data is never sold. Processors are Google LLC (Firebase, Analytics) and
-        Apple Inc. (in-app purchases). To request access to or deletion of your data, email
+        tracking.</strong> Data is never sold. Processors are Google LLC (Firebase, Analytics),
+        Apple Inc. (in-app purchases, Sign in with Apple) and Zoho Corporation (report notification email). You can delete your account and data at any time from
+        "アカウントを削除" (Delete Account) in the app's settings. To request access to your data, email
         <a href="mailto:info@wellsteria.com">info@wellsteria.com</a> with the user ID shown on the
         app's settings screen.</p>
       </section>
@@ -298,4 +324,3 @@
   </footer>
 </body>
 </html>
-
