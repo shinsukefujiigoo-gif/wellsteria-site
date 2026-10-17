@@ -176,9 +176,9 @@
     <div class="wrap">
       <h1>プライバシーポリシー</h1>
       <p class="lede">アプリ「サンタ募集中」における利用者の情報の取り扱いについて</p>
-      <p class="updated">最終更新日: 2026年9月14日</p>
+      <p class="updated">最終更新日: 2026年10月17日</p>
 
-      <p>WELLSTERIA LLC（以下「当社」）は、iOS 向けアプリ「サンタ募集中」（以下「本アプリ」）における
+      <p>WELLSTERIA LLC（以下「当社」）は、iOS・Android 向けアプリ「サンタ募集中」（以下「本アプリ」）における
       利用者の情報の取り扱いについて、以下のとおり定めます。</p>
 
       <h2>1. 事業者情報</h2>
@@ -193,16 +193,19 @@
       <h2>2. 取得する情報</h2>
       <div class="note">
         <p><strong>氏名・住所・電話番号・メールアドレスなど、利用者を直接特定する情報は取得しません。</strong>
-        また、<strong>広告の配信や広告のためのトラッキングは一切行いません。</strong></p>
+        また、<strong>広告のためのトラッキングは行いません。</strong>（広告識別子（iOS の IDFA、Android の広告 ID）は使用せず、
+        アプリ間の行動追跡も行いません。広告そのものについては「4. 第三者への提供」をご覧ください。）</p>
       </div>
 
       <h3>2.1 アカウント識別子</h3>
       <p>本アプリは、利用者が ID やパスワードを登録することなくゲームデータを保存できるよう、
       <strong>匿名の識別子</strong>を自動的に発行します。この識別子は本アプリのデータ保存にのみ用いられ、
       他のサービスの利用者情報とは結び付きません。</p>
-      <p>機種変更の引き継ぎのために、任意で <strong>Sign in with Apple</strong> と連携できます。連携した場合は、
-      Apple が本アプリ向けに発行する利用者ごとの識別子だけを保存します。<strong>メールアドレスや氏名は Apple に求めておらず、
-      取得しません。</strong></p>
+      <p>機種変更の引き継ぎのために、任意で <strong>Sign in with Apple</strong>（iOS 版）または
+      <strong>Google アカウント</strong>（Android 版）と連携できます。連携した場合は、Apple または Google が発行する
+      利用者ごとの識別子だけを保存します。<strong>メールアドレスや氏名は Apple に求めておらず、取得しません。</strong>
+      Google との連携では、本人確認のために Google から届く情報にメールアドレスが含まれますが、確認にだけ用い、
+      <strong>保存しません。</strong></p>
 
       <h3>2.2 ゲームの進行データ</h3>
       <p>ゲームの進行状況（所持キャラクター、素材、配達履歴、ミニゲームの記録、購入済みコスチューム等）を
@@ -217,9 +220,10 @@
       すべての利用者の画面から消すことがあります（2 人以上から通報された場合は自動で消えます）。</p>
 
       <h3>2.4 購入情報</h3>
-      <p>アプリ内課金を行った場合、購入の正当性を確認するため、Apple から発行されるレシートおよび
-      取引 ID を当社のサーバーで検証し、購入した権利（サブスクリプションの有効期限、購入済みコスチューム等）を
-      保存します。<strong>クレジットカード番号などの決済情報は Apple が処理するもので、当社が取得することはありません。</strong></p>
+      <p>アプリ内課金を行った場合、購入の正当性を確認するため、Apple（iOS 版）または Google Play（Android 版）から
+      発行されるレシート・購入トークンおよび取引 ID を当社のサーバーで検証し、購入した権利（サブスクリプションの
+      有効期限、購入済みコスチューム等）を保存します。<strong>クレジットカード番号などの決済情報は Apple または
+      Google が処理するもので、当社が取得することはありません。</strong></p>
 
       <h3>2.5 利用状況の情報</h3>
       <p>本アプリの改善のため、Google アナリティクス（Google Analytics for Firebase）を利用して、
@@ -245,16 +249,24 @@
         <li>不具合の把握と、ゲームバランス・操作性の改善</li>
         <li>不正行為（スコアの改ざん、購入レシートの使い回し等）の検知と防止</li>
         <li>不適切な表示名への対応（通報の受付と、運営者への通知）</li>
+        <li>動画広告の表示（利用者が自分で選んだ場合のみ）</li>
       </ol>
 
       <h2>4. 第三者への提供</h2>
-      <p>当社は、取得した情報を<strong>第三者に販売しません</strong>。
-      広告識別子（IDFA）は使用せず、アプリ間の行動追跡も行いません。
-      以下の事業者には、上記の目的の達成に必要な範囲で情報の取り扱いを委託しています。</p>
+      <p>当社は、取得した情報を<strong>第三者に販売しません</strong>。</p>
+      <p>本アプリには、利用者が自分でボタンを押したときだけ再生される<strong>動画広告</strong>があります。
+      広告の配信には Google の広告サービス（Google AdMob）を利用しており、広告の表示・効果測定・不正防止のために、
+      端末の種別・OS のバージョン・おおよその地域・IP アドレス・アプリの提供元ごとの端末識別子（iOS の IDFV など）・
+      広告の視聴結果といった情報が Google に送信されます。Google による情報の取り扱いは
+      「<a href="https://policies.google.com/technologies/partner-sites">Google のサービスを使用するサイトやアプリから収集した情報の Google による使用</a>」をご覧ください。</p>
+      <p><strong>当社は広告のためのトラッキングを行いません。</strong> 広告識別子（iOS の IDFA、Android の広告 ID）は使用せず、
+      アプリ間・ウェブサイト間の行動追跡も行いません。広告は利用者の興味関心に基づかない形
+      （非パーソナライズ）で配信されます。</p>
+      <p>以下の事業者には、上記の目的の達成に必要な範囲で情報の取り扱いを委託しています。</p>
       <div class="table-scroll">
         <table>
           <tr><th>委託先</th><th>委託する内容</th></tr>
-          <tr><td>Google LLC（Firebase / Google アナリティクス）</td><td>データの保存、匿名認証、利用状況の分析</td></tr>
+          <tr><td>Google LLC（Firebase / Google アナリティクス / Google Play / Google AdMob）</td><td>データの保存、匿名認証、利用状況の分析、Android 版のアプリ内課金の決済処理と購入の検証、Google アカウントによる連携、動画広告の配信と効果・不正の計測</td></tr>
           <tr><td>Apple Inc.</td><td>アプリ内課金の決済処理およびレシートの検証、Sign in with Apple による連携</td></tr>
           <tr><td>Zoho Corporation（Zoho Mail）</td><td>通報を運営者に知らせるメールの送信（通報された表示名と識別子）</td></tr>
         </table>
@@ -272,8 +284,8 @@
 
       <h2>6. 利用者の権利（開示・削除の請求）</h2>
       <p><strong>アカウントとデータは、アプリの設定画面の「アカウントを削除」からいつでも削除できます。</strong>
-      進行・ランキング・購入の記録・通報の記録・認証情報が当社のサーバーから削除され、Apple と連携している場合は
-      その連携も取り消されます（取引の重複利用を防ぐための購入台帳は、利用者との紐付けを外して保持します）。</p>
+      進行・ランキング・購入の記録・通報の記録・認証情報が当社のサーバーから削除され、Apple または Google と
+      連携している場合はその連携も取り消されます（取引の重複利用を防ぐための購入台帳は、利用者との紐付けを外して保持します）。</p>
       <p>このほか、当社が保有する自身のデータについて、開示・訂正・削除を求めることができます。
       <a href="mailto:info@wellsteria.com">info@wellsteria.com</a> までご連絡ください。
       削除の手順は<a href="/delete-account/">アカウント削除のページ</a>にもまとめています。</p>
@@ -300,16 +312,22 @@
         <p><strong>Santa Boshuchu</strong> (サンタ募集中), published by WELLSTERIA LLC, does not collect
         names, addresses, phone numbers or email addresses. The app signs users in anonymously and stores
         game progress, an optional public display name (1–12 characters, shown on leaderboards), and
-        in-app purchase entitlements on Firebase. Players may optionally link Sign in with Apple to move
-        progress to a new device; only the app-specific identifier Apple issues is stored (no email or
-        name is requested). Display names containing objectionable words are rejected, and players can
+        in-app purchase entitlements on Firebase. Players may optionally link Sign in with Apple (iOS) or a
+        Google account (Android) to move progress to a new device; only the user identifier Apple or Google
+        issues is stored (no email or name is requested from Apple; the email included in Google's sign-in
+        response is used only for verification and is not stored). Display names containing objectionable words are rejected, and players can
         report names; a report records the anonymous identifiers of both players, the reported name and
         the time, and notifies the operator by email. Google Analytics for Firebase collects app lifecycle
         events, installation and device identifiers, device model and OS version, and a country/region
         estimated from a masked IP address. The app requests no location permission.</p>
-        <p><strong>The app contains no advertising, does not use the IDFA, and performs no cross-app
-        tracking.</strong> Data is never sold. Processors are Google LLC (Firebase, Analytics),
-        Apple Inc. (in-app purchases, Sign in with Apple) and Zoho Corporation (report notification email). You can delete your account and data at any time from
+        <p><strong>The app shows opt-in rewarded video ads served by Google AdMob.</strong> They are never
+        interstitial or forced: a player taps a button to watch one, and each placement states the reward
+        up front. Google receives the device type, OS version, approximate region, IP address, a vendor-scoped
+        device identifier (such as the IDFV on iOS) and the outcome of the ad, for ad delivery, measurement and fraud prevention
+        (see <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use our services</a>). <strong>The app does not use advertising
+        identifiers (the IDFA on iOS or the Advertising ID on Android) and performs no cross-app tracking; ads are served non-personalized.</strong> Data is never sold.
+        Processors are Google LLC (Firebase, Analytics, Google Play purchases, Google account linking, AdMob rewarded video ads), Apple Inc. (in-app purchases, Sign in with Apple)
+        and Zoho Corporation (report notification email). You can delete your account and data at any time from
         "アカウントを削除" (Delete Account) in the app's settings. To request access to your data, email
         <a href="mailto:info@wellsteria.com">info@wellsteria.com</a> with the user ID shown on the
         app's settings screen.</p>
