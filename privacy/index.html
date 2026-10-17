@@ -192,8 +192,8 @@
 
       <h2>2. 取得する情報</h2>
       <div class="note">
-        <p><strong>氏名・住所・電話番号など、利用者を直接特定する情報は取得せず、メールアドレスも保存しません。</strong>
-        （Android 版の Google アカウント連携では、Google から届く情報にメールアドレスが含まれますが、本人確認にだけ用い、保存しません。）
+        <p><strong>住所・電話番号など、利用者を直接特定する情報は取得せず、氏名とメールアドレスも保存しません。</strong>
+        （Android 版の Google アカウント連携では、Google から届く情報に名前とメールアドレスが含まれますが、本人確認にだけ用い、保存しません。）
         また、<strong>広告のためのトラッキングは行いません。</strong>（広告識別子（iOS の IDFA、Android の広告 ID）は使用せず、
         アプリ間の行動追跡も行いません。広告そのものについては「4. 第三者への提供」をご覧ください。）</p>
       </div>
@@ -205,7 +205,7 @@
       <p>機種変更の引き継ぎのために、任意で <strong>Sign in with Apple</strong>（iOS 版）または
       <strong>Google アカウント</strong>（Android 版）と連携できます。連携した場合は、Apple または Google が発行する
       利用者ごとの識別子だけを保存します。<strong>メールアドレスや氏名は Apple に求めておらず、取得しません。</strong>
-      Google との連携では、本人確認のために Google から届く情報にメールアドレスが含まれますが、確認にだけ用い、
+      Google との連携では、本人確認のために Google から届く情報に名前とメールアドレスが含まれますが、確認にだけ用い、
       <strong>保存しません。</strong></p>
 
       <h3>2.2 ゲームの進行データ</h3>
@@ -311,12 +311,12 @@
         <h2>English summary</h2>
         <p>This is a summary for reference. The Japanese text above is the authoritative version.</p>
         <p><strong>Santa Boshuchu</strong> (サンタ募集中), published by WELLSTERIA LLC, does not collect
-        real names, addresses or phone numbers, and does not store email addresses. The app signs users in anonymously and stores
+        addresses or phone numbers, and does not store real names or email addresses. The app signs users in anonymously and stores
         game progress, an optional public display name (1–12 characters, shown on leaderboards), and
         in-app purchase entitlements on Firebase. Players may optionally link Sign in with Apple (iOS) or a
         Google account (Android) to move progress to a new device; only the user identifier Apple or Google
-        issues is stored (no email or name is requested from Apple; the email included in Google's sign-in
-        response is used only for verification and is not stored). Display names containing objectionable words are rejected, and players can
+        issues is stored (no email or name is requested from Apple; the name and email included in Google's sign-in
+        response are used only for verification and are not stored). Display names containing objectionable words are rejected, and players can
         report names; a report records the anonymous identifiers of both players, the reported name and
         the time, and notifies the operator by email. Google Analytics for Firebase collects app lifecycle
         events, installation and device identifiers, device model and OS version, and a country/region
