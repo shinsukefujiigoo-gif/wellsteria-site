@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — Wellsteria LLC</title>
+  <meta name="description" content="Privacy policy for the app Santa WANTED (サンタ募集中) by Wellsteria LLC.">
+  <link rel="alternate" hreflang="en" href="https://wellsteria.com/en/privacy/">
+  <link rel="alternate" hreflang="ja" href="https://wellsteria.com/privacy/">
+  <style>
+    :root {
+      --ink: #201a17;
+      --ink-soft: #5c534d;
+      --ink-faint: #8a8079;
+      --paper: #faf7f2;
+      --surface: #ffffff;
+      --line: #ece6dd;
+      --accent: #b4302b;
+      --accent-deep: #8f231f;
+      --wrap: 52rem;
+      --font: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Kaku Gothic ProN", "Yu Gothic", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+
+    body {
+      margin: 0;
+      font-family: var(--font);
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.75;
+      font-size: clamp(1rem, 0.96rem + 0.2vw, 1.0625rem);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .wrap {
+      width: 100%;
+      max-width: var(--wrap);
+      margin-inline: auto;
+      padding-inline: clamp(1.25rem, 5vw, 2.5rem);
+    }
+
+    a { color: var(--accent-deep); }
+
+    .site-head {
+      border-bottom: 1px solid var(--line);
+      background: color-mix(in srgb, var(--paper) 88%, transparent);
+      position: sticky;
+      top: 0;
+      backdrop-filter: saturate(120%) blur(8px);
+      z-index: 10;
+    }
+    .site-head .wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding-block: 1.1rem;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 0.55rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      text-decoration: none;
+      color: var(--ink);
+    }
+    .brand .mark {
+      width: 0.55rem;
+      height: 0.55rem;
+      border-radius: 50%;
+      background: var(--accent);
+      transform: translateY(-0.05rem);
+    }
+    .head-loc { color: var(--ink-faint); font-size: 0.9rem; }
+
+    main { padding-block: clamp(2.5rem, 2rem + 3vw, 4.5rem) clamp(3rem, 2.5rem + 3vw, 5rem); }
+
+    h1 {
+      font-size: clamp(1.9rem, 1.5rem + 1.8vw, 2.6rem);
+      line-height: 1.25;
+      letter-spacing: -0.02em;
+      margin: 0 0 0.4rem;
+    }
+    .lede { color: var(--ink-soft); margin: 0 0 0.25rem; }
+    .updated { color: var(--ink-faint); font-size: 0.9rem; margin: 0 0 2.75rem; }
+
+    h2 {
+      font-size: 1.2rem;
+      letter-spacing: -0.01em;
+      margin: 2.75rem 0 0.75rem;
+      padding-top: 1.75rem;
+      border-top: 1px solid var(--line);
+    }
+    h3 { font-size: 1.02rem; margin: 1.75rem 0 0.5rem; }
+    p, li { color: var(--ink-soft); }
+    p { margin: 0 0 1rem; }
+    ul, ol { margin: 0 0 1rem; padding-left: 1.35rem; }
+    li { margin-bottom: 0.4rem; }
+    strong { color: var(--ink); font-weight: 700; }
+
+    .table-scroll { overflow-x: auto; margin: 0 0 1.25rem; }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      /* 幅を強制すると狭い画面で住所が切れて横スクロールになる。折り返させたほうが読める。
+         .table-scroll は将来列が増えたときの保険として残す。 */
+      min-width: 0;
+      font-size: 0.95rem;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+    }
+    th, td {
+      text-align: left;
+      padding: 0.7rem 0.9rem;
+      border-bottom: 1px solid var(--line);
+      color: var(--ink-soft);
+      vertical-align: top;
+    }
+    th { color: var(--ink); font-weight: 700; white-space: nowrap; }
+    tr:last-child th, tr:last-child td { border-bottom: 0; }
+
+    .note {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-left: 3px solid var(--accent);
+      border-radius: 10px;
+      padding: 1rem 1.15rem;
+      margin: 0 0 1.25rem;
+    }
+    .note p:last-child { margin-bottom: 0; }
+
+    .en { margin-top: 3.5rem; }
+    .en p, .en li { font-size: 0.95rem; }
+
+    footer {
+      border-top: 1px solid var(--line);
+      color: var(--ink-faint);
+      font-size: 0.9rem;
+    }
+    footer .wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding-block: 1.6rem;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --ink: #f2ece4;
+        --ink-soft: #b7aea4;
+        --ink-faint: #857c72;
+        --paper: #16130f;
+        --surface: #1e1a15;
+        --line: #2c2620;
+        --accent: #e06a5a;
+        --accent-deep: #ef8577;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap">
+      <a class="brand" href="/">
+        <span class="mark" aria-hidden="true"></span>
+        Wellsteria <span class="llc">LLC</span>
+      </a>
+      <a class="head-loc" href="/privacy/" hreflang="ja" lang="ja">日本語</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <h1>Privacy Policy</h1>
+      <p class="lede">How the app &ldquo;Santa WANTED&rdquo; (サンタ募集中) handles your information</p>
+      <p class="updated">Last updated: October 31, 2026</p>
+
+      <p>WELLSTERIA LLC (&ldquo;we&rdquo;, &ldquo;us&rdquo;) sets out below how we handle information about users of
+      &ldquo;Santa WANTED&rdquo; (Japanese title: サンタ募集中), our app for iOS and Android (the &ldquo;App&rdquo;).</p>
+      <p>This English version is a translation provided for convenience. If it differs from the
+      <a href="/privacy/" hreflang="ja" lang="ja">Japanese version</a>, the Japanese version prevails.</p>
+
+      <h2>1. Who we are</h2>
+      <div class="table-scroll">
+        <table>
+          <tr><th>Company</th><td>WELLSTERIA LLC</td></tr>
+          <tr><th>Address</th><td>2603 Kimbolton Dr, College Station, TX 77845-1233, U.S.A.</td></tr>
+          <tr><th>Contact</th><td><a href="mailto:info@wellsteria.com">info@wellsteria.com</a></td></tr>
+        </table>
+      </div>
+
+      <h2>2. Information we collect</h2>
+      <div class="note">
+        <p><strong>We do not collect information that directly identifies you, such as your address or phone number,
+        and we do not store your name or email address.</strong>
+        (When you link a Google account on Android, the information Google sends back includes data such as your name and
+        email address; we use it only to verify your sign-in and do not store it.)
+        <strong>We do not track you for advertising.</strong> (We do not use advertising identifiers&mdash;the IDFA on iOS
+        or the Advertising ID on Android&mdash;and we do not track your activity across apps. For the ads themselves,
+        see &ldquo;4. Sharing with third parties&rdquo;.)</p>
+      </div>
+
+      <h3>2.1 Account identifier</h3>
+      <p>So that you can save your game without registering an ID or password, the App automatically issues an
+      <strong>anonymous identifier</strong>. It is used only to store the App&rsquo;s data and is not linked to your
+      account on any other service.</p>
+      <p>To move your progress to a new device, you may optionally link <strong>Sign in with Apple</strong> (iOS) or a
+      <strong>Google account</strong> (Android). If you do, we store only the per-user identifier issued by Apple or Google.
+      <strong>We do not request your email address or name from Apple and do not receive them.</strong>
+      With Google, the information sent back for verification includes data such as your name and email address; we use it
+      only for that check and <strong>do not store it.</strong></p>
+
+      <h3>2.2 Game progress</h3>
+      <p>We store your game progress (characters you own, materials, delivery history, minigame records, purchased costumes
+      and so on) on our servers, so that your data carries over when you change devices or reinstall the App.</p>
+
+      <h3>2.3 Display name (optional)</h3>
+      <p>You may set a name to show on the leaderboards (1&ndash;12 characters).
+      <strong>The name you set is shown to other users through the leaderboards.</strong>
+      You do not need to use your real name, and you can use the App without setting one.</p>
+      <p>To prevent inappropriate names, our servers reject names containing discriminatory, violent or sexual expressions,
+      advertising and the like. Other users can also report an inappropriate name; after review, the operator may remove a
+      reported name from every user&rsquo;s screen (a name reported by two or more users is hidden automatically).</p>
+
+      <h3>2.4 Purchase information</h3>
+      <p>When you make an in-app purchase, our servers verify the receipt or purchase token and transaction ID issued by
+      Apple (iOS) or Google Play (Android) to confirm that the purchase is valid, and store the entitlements you bought
+      (such as the subscription expiry date and purchased costumes). <strong>Payment details such as card numbers are
+      handled by Apple or Google; we never receive them.</strong></p>
+
+      <h3>2.5 Usage information</h3>
+      <p>To improve the App, we use Google Analytics for Firebase, which automatically collects the following:</p>
+      <ul>
+        <li>Activity logs such as app launches and exits, screens viewed and time spent</li>
+        <li>An app installation identifier and a device identifier</li>
+        <li>Device model, OS version and language setting</li>
+        <li>Country or region estimated from your IP address (the App does not request location permission)</li>
+      </ul>
+
+      <h3>2.6 Report records</h3>
+      <p>When you report a leaderboard display name, we record <strong>the anonymous identifiers of the reporting user and
+      the reported user, the display name at the time of the report, and the date and time</strong>. These records are used
+      only to deal with inappropriate names, and the operator is notified of the report by email. We never tell the reported
+      user or anyone else who made a report.</p>
+
+      <h2>3. How we use information</h2>
+      <ol>
+        <li>To save your game data and carry it over between devices</li>
+        <li>To provide the leaderboards</li>
+        <li>To verify in-app purchases and to grant and restore the entitlements you bought</li>
+        <li>To find bugs and improve game balance and usability</li>
+        <li>To detect and prevent cheating (such as tampering with scores or reusing purchase receipts)</li>
+        <li>To deal with inappropriate display names (receiving reports and notifying the operator)</li>
+        <li>To show video ads (only when you choose to watch one)</li>
+      </ol>
+
+      <h2>4. Sharing with third parties</h2>
+      <p>We <strong>do not sell</strong> the information we collect.</p>
+      <p>The App contains <strong>video ads</strong> that play only when you tap a button yourself. Ads are delivered by
+      Google&rsquo;s ad service (Google AdMob). To show ads, measure them and prevent fraud, information such as the device
+      type, OS version, approximate region, IP address, a vendor-scoped device identifier (such as the IDFV on iOS) and the
+      outcome of the ad is sent to Google. For how Google handles this information, see
+      &ldquo;<a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use our services</a>&rdquo;.</p>
+      <p><strong>We do not track you for advertising.</strong> We do not use advertising identifiers (the IDFA on iOS or
+      the Advertising ID on Android), and we do not track your activity across apps or websites. Ads are served without
+      being based on your interests (non-personalized).</p>
+      <p>We entrust the handling of information to the following service providers, only to the extent needed for the
+      purposes above.</p>
+      <div class="table-scroll">
+        <table>
+          <tr><th>Provider</th><th>What they do for us</th></tr>
+          <tr><td>Google LLC (Firebase / Google Analytics / Google Play / Google AdMob)</td><td>Data storage, anonymous authentication, usage analytics, payment processing and purchase verification for Android in-app purchases, Google account linking, delivery of video ads and measurement of their results and fraud</td></tr>
+          <tr><td>Apple Inc.</td><td>Payment processing and receipt verification for in-app purchases, Sign in with Apple linking</td></tr>
+          <tr><td>Zoho Corporation (Zoho Mail)</td><td>Sending the email that notifies the operator of a report (the reported display name and identifiers)</td></tr>
+        </table>
+      </div>
+      <p>Except where disclosure is required by law, we do not provide information to any other third party.</p>
+
+      <h2>5. Where and how long we keep information</h2>
+      <ul>
+        <li>Game data and purchase entitlements are stored on Google Cloud (Firebase).</li>
+        <li>Game data is kept until you delete your account or ask us to delete it.</li>
+        <li>Report records are kept after the report has been dealt with, to prevent the same abuse from recurring, and are
+        deleted when the reporting user or the reported user deletes their account.</li>
+        <li>Usage information is deleted automatically after a period set in Google Analytics.</li>
+      </ul>
+
+      <h2>6. Your rights (access and deletion)</h2>
+      <p><strong>You can delete your account and data at any time from &ldquo;Delete Account&rdquo; on the App&rsquo;s
+      Settings screen.</strong> Your progress, leaderboard entries, purchase records, report records and authentication
+      records are deleted from our servers. If you linked Apple or Google, the linking information on our servers is deleted,
+      and the link with Apple is also revoked on Apple&rsquo;s side. (We keep a purchase ledger, with the link to you removed,
+      to prevent the same transaction from being reused.)</p>
+      <p>You can also ask us to disclose, correct or delete the data we hold about you. Please contact
+      <a href="mailto:info@wellsteria.com">info@wellsteria.com</a>. The deletion steps are also described on the
+      <a href="/delete-account/">account deletion page</a>.</p>
+      <div class="note">
+        <p>The App works with an anonymous identifier, and we have no way of identifying you. When you contact us, please
+        include the <strong>&ldquo;User ID&rdquo; shown on the App&rsquo;s Settings screen</strong>
+        (you can copy it with the &ldquo;Copy&rdquo; button).</p>
+      </div>
+
+      <h2>7. Children</h2>
+      <p>The App is not designed for children under 13. We do not serve ads targeted at children and do not use
+      behavioral targeting.</p>
+
+      <h2>8. Governing law</h2>
+      <p>This policy is interpreted and applied in accordance with Japan&rsquo;s Act on the Protection of Personal
+      Information and other applicable laws.</p>
+
+      <h2>9. Changes to this policy</h2>
+      <p>We may revise this policy when laws change or the service changes. If we make an important change, we will
+      announce it on this page or by a notice in the App.</p>
+
+      <h2>Related pages</h2>
+      <ul>
+        <li><a href="/en/support/">Support</a></li>
+        <li><a href="/delete-account/">Deleting your account and data</a></li>
+        <li><a href="/licenses/">Licenses</a></li>
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>&copy; 2026 WELLSTERIA LLC</span>
+      <span><a href="/en/privacy/">Privacy</a> · <a href="/licenses/">Licenses</a></span>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support — Wellsteria LLC</title>
+  <meta name="description" content="Contact and FAQ for the app Santa WANTED (サンタ募集中) by Wellsteria LLC.">
+  <link rel="alternate" hreflang="en" href="https://wellsteria.com/en/support/">
+  <link rel="alternate" hreflang="ja" href="https://wellsteria.com/support/">
+  <style>
+    :root {
+      --ink: #201a17;
+      --ink-soft: #5c534d;
+      --ink-faint: #8a8079;
+      --paper: #faf7f2;
+      --surface: #ffffff;
+      --line: #ece6dd;
+      --accent: #b4302b;
+      --accent-deep: #8f231f;
+      --wrap: 52rem;
+      --font: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Kaku Gothic ProN", "Yu Gothic", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+
+    body {
+      margin: 0;
+      font-family: var(--font);
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.75;
+      font-size: clamp(1rem, 0.96rem + 0.2vw, 1.0625rem);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .wrap {
+      width: 100%;
+      max-width: var(--wrap);
+      margin-inline: auto;
+      padding-inline: clamp(1.25rem, 5vw, 2.5rem);
+    }
+
+    a { color: var(--accent-deep); }
+
+    .site-head {
+      border-bottom: 1px solid var(--line);
+      background: color-mix(in srgb, var(--paper) 88%, transparent);
+      position: sticky;
+      top: 0;
+      backdrop-filter: saturate(120%) blur(8px);
+      z-index: 10;
+    }
+    .site-head .wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding-block: 1.1rem;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 0.55rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      text-decoration: none;
+      color: var(--ink);
+    }
+    .brand .mark {
+      width: 0.55rem;
+      height: 0.55rem;
+      border-radius: 50%;
+      background: var(--accent);
+      transform: translateY(-0.05rem);
+    }
+    .head-loc { color: var(--ink-faint); font-size: 0.9rem; }
+
+    main { padding-block: clamp(2.5rem, 2rem + 3vw, 4.5rem) clamp(3rem, 2.5rem + 3vw, 5rem); }
+
+    h1 {
+      font-size: clamp(1.9rem, 1.5rem + 1.8vw, 2.6rem);
+      line-height: 1.25;
+      letter-spacing: -0.02em;
+      margin: 0 0 0.4rem;
+    }
+    .lede { color: var(--ink-soft); margin: 0 0 0.25rem; }
+    .updated { color: var(--ink-faint); font-size: 0.9rem; margin: 0 0 2.75rem; }
+
+    h2 {
+      font-size: 1.2rem;
+      letter-spacing: -0.01em;
+      margin: 2.75rem 0 0.75rem;
+      padding-top: 1.75rem;
+      border-top: 1px solid var(--line);
+    }
+    h3 { font-size: 1.02rem; margin: 1.75rem 0 0.5rem; }
+    p, li { color: var(--ink-soft); }
+    p { margin: 0 0 1rem; }
+    ul, ol { margin: 0 0 1rem; padding-left: 1.35rem; }
+    li { margin-bottom: 0.4rem; }
+    strong { color: var(--ink); font-weight: 700; }
+
+    .table-scroll { overflow-x: auto; margin: 0 0 1.25rem; }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      /* 幅を強制すると狭い画面で住所が切れて横スクロールになる。折り返させたほうが読める。
+         .table-scroll は将来列が増えたときの保険として残す。 */
+      min-width: 0;
+      font-size: 0.95rem;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+    }
+    th, td {
+      text-align: left;
+      padding: 0.7rem 0.9rem;
+      border-bottom: 1px solid var(--line);
+      color: var(--ink-soft);
+      vertical-align: top;
+    }
+    th { color: var(--ink); font-weight: 700; white-space: nowrap; }
+    tr:last-child th, tr:last-child td { border-bottom: 0; }
+
+    .note {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-left: 3px solid var(--accent);
+      border-radius: 10px;
+      padding: 1rem 1.15rem;
+      margin: 0 0 1.25rem;
+    }
+    .note p:last-child { margin-bottom: 0; }
+
+    .en { margin-top: 3.5rem; }
+    .en p, .en li { font-size: 0.95rem; }
+
+    footer {
+      border-top: 1px solid var(--line);
+      color: var(--ink-faint);
+      font-size: 0.9rem;
+    }
+    footer .wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding-block: 1.6rem;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --ink: #f2ece4;
+        --ink-soft: #b7aea4;
+        --ink-faint: #857c72;
+        --paper: #16130f;
+        --surface: #1e1a15;
+        --line: #2c2620;
+        --accent: #e06a5a;
+        --accent-deep: #ef8577;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap">
+      <a class="brand" href="/">
+        <span class="mark" aria-hidden="true"></span>
+        Wellsteria <span class="llc">LLC</span>
+      </a>
+      <a class="head-loc" href="/support/" hreflang="ja" lang="ja">日本語</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <h1>Support</h1>
+      <p class="lede">Contact and FAQ for the app &ldquo;Santa WANTED&rdquo; (サンタ募集中)</p>
+      <p class="updated">Last updated: October 31, 2026</p>
+
+      <div class="note">
+        <p><strong>Contact:</strong> <a href="mailto:info@wellsteria.com">info@wellsteria.com</a></p>
+        <p>We answer in English or Japanese, on business days (U.S. Central Time).
+        When reporting a bug, please include your User ID (see below) so we can look into it faster.</p>
+      </div>
+
+      <h2>Before you contact us</h2>
+
+      <h3>Finding your User ID</h3>
+      <p>You can play the App without creating an account, so we have no other way to find your data.
+      When you contact us or ask us to delete your data, please include the User ID issued in the App.</p>
+      <ol>
+        <li>Open <strong>Settings</strong> from the gear icon at the top left of the home screen</li>
+        <li>Tap <strong>&ldquo;Copy&rdquo;</strong> next to <strong>&ldquo;User ID (for support)&rdquo;</strong> near the bottom</li>
+        <li>Paste it into your email and send it</li>
+      </ol>
+      <p>The User ID may not appear while you are offline. If so, restart the App where you have a connection.</p>
+
+      <h2>FAQ</h2>
+
+      <h3>I want to move to a new device / continue on another device</h3>
+      <p>In Settings, go to <strong>&ldquo;Account Link (transfer to a new device)&rdquo;</strong> and use
+      <strong>&ldquo;Sign in with Apple&rdquo;</strong> (iOS) or <strong>&ldquo;Sign in with Google&rdquo;</strong> (Android).
+      Once linked, sign in with the same Apple ID or Google account on the new device to bring over your progress and purchases.</p>
+      <p>If you have already started playing on the new device, <strong>that progress will be replaced by the data you are
+      transferring</strong>. A confirmation screen appears first, so please check it before continuing.</p>
+
+      <h3>My purchase is not showing / it disappeared after reinstalling</h3>
+      <p>Restart the App where you have a good connection; your purchases are checked again on launch.
+      If that does not help, try <strong>&ldquo;Restore Purchases&rdquo;</strong> in the Shop.
+      If it is still not resolved, email us with your User ID and the date and time of the purchase.</p>
+
+      <h3>I want my data deleted</h3>
+      <p>You can delete it at any time from <strong>&ldquo;Delete Account&rdquo;</strong> in Settings. If you have already
+      removed the App, email <a href="mailto:info@wellsteria.com">info@wellsteria.com</a> with your User ID.
+      The steps, and what is deleted and what is kept, are on the <a href="/delete-account/">account deletion page</a>.</p>
+
+      <h3>I want a refund</h3>
+      <p>Refunds are handled by the store you bought from; we cannot issue refunds directly.</p>
+      <ul>
+        <li><strong>App Store:</strong> request a refund from Apple at
+        <a href="https://reportaproblem.apple.com/">reportaproblem.apple.com</a>.</li>
+        <li><strong>Google Play:</strong> see Google&rsquo;s
+        <a href="https://support.google.com/googleplay/answer/2479637">refund help page</a>.</li>
+      </ul>
+
+      <h3>I don&rsquo;t know how to progress</h3>
+      <p>The in-game year starts in January. <strong>January to April is the training period</strong>, when you raise your
+      elves, reindeer and dwarves. Letters start arriving, and deliveries begin, in <strong>May</strong>.
+      &ldquo;Advance Time&rdquo; moves the game forward one week; after a while you can use it again.</p>
+
+      <h3>I want to start over / reinstalling did not reset my progress</h3>
+      <p>Deleting and reinstalling the App does not reset your progress (the App reads the same data back using the
+      identifier kept on your device). To start fresh, tap <strong>&ldquo;Start Over&rdquo;</strong> in Settings and confirm.
+      You will start from January with no characters.</p>
+      <p>Your current progress (month, characters, presents and tree) is <strong>all erased and cannot be recovered</strong>.
+      Your subscription, Monthly Pass and costumes are kept.</p>
+
+      <h3>I found a bug</h3>
+      <p>Please send us these three things: (1) your User ID, (2) your device and OS version, and (3) which screen you were on
+      and what you did when it happened.</p>
+
+      <h2>Related pages</h2>
+      <ul>
+        <li><a href="/en/privacy/">Privacy Policy</a></li>
+        <li><a href="/delete-account/">Deleting your account and data</a></li>
+        <li><a href="/licenses/">Licenses</a></li>
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>&copy; 2026 WELLSTERIA LLC</span>
+      <span><a href="/en/privacy/">Privacy</a> · <a href="/licenses/">Licenses</a></span>
+    </div>
+  </footer>
+</body>
+</html>
