@@ -225,6 +225,24 @@
     }
     .platform .name { font-weight: 600; }
     .platform .state { color: var(--ink-faint); font-size: 0.88rem; }
+    a.platform { color: var(--ink); text-decoration: none; transition: border-color var(--ease) 0.25s; }
+    a.platform .state { color: var(--accent-deep); font-weight: 600; }
+    a.platform:hover, a.platform:focus-visible { border-color: var(--accent); }
+
+    /* ストアへのボタン（ヒーロー） */
+    .store-links { margin-top: 2rem; display: flex; flex-wrap: wrap; gap: 0.8rem; }
+    .store-link {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.75rem 1.4rem;
+      border-radius: 999px;
+      font-weight: 600;
+      text-decoration: none;
+      color: var(--paper);
+      background: var(--accent);
+      transition: background var(--ease) 0.25s;
+    }
+    .store-link:hover, .store-link:focus-visible { background: var(--accent-deep); color: var(--paper); }
 
     /* Contact */
     .contact .wrap { display: grid; gap: 1.3rem; }
@@ -297,7 +315,6 @@
         Wellsteria <span class="llc">LLC</span>
       </a>
       <span class="head-right">
-        <span class="head-loc">Texas, USA</span>
         <a class="lang" href="/" hreflang="en" lang="en">English</a>
       </span>
     </div>
@@ -309,6 +326,10 @@
         <span class="eyebrow">育成シミュレーション</span>
         <h1 id="hero-heading">サンタ募集中</h1>
         <p class="lede">サンタクロース候補、募集中。</p>
+        <div class="store-links">
+          <a class="store-link" href="https://apps.apple.com/jp/app/id6790641606">App Store で見る</a>
+          <a class="store-link" href="https://play.google.com/store/apps/details?id=com.wellsteria.allyearsanta">Google Play で見る</a>
+        </div>
       </div>
     </section>
 
@@ -349,17 +370,17 @@
         <p class="kicker">配信</p>
         <h2 id="platform-heading">対応プラットフォーム</h2>
         <div class="prose">
-          <p>iOS / iPadOS 版を先に、Android 版はそのあとに用意します。新しい知らせは X <a href="https://x.com/santa_boshu">@santa_boshu</a> とこのページで出します。</p>
+          <p>iOS / iPadOS と Android で配信中です（基本無料・アプリ内課金あり）。新しい知らせは X <a href="https://x.com/santa_boshu">@santa_boshu</a> とこのページで出します。</p>
         </div>
         <div class="platforms">
-          <div class="platform">
+          <a class="platform" href="https://apps.apple.com/jp/app/id6790641606">
             <span class="name">iOS / iPadOS</span>
-            <span class="state">App Store</span>
-          </div>
-          <div class="platform">
+            <span class="state">App Store で見る →</span>
+          </a>
+          <a class="platform" href="https://play.google.com/store/apps/details?id=com.wellsteria.allyearsanta">
             <span class="name">Android</span>
-            <span class="state">Google Play・iOS 版のあと</span>
-          </div>
+            <span class="state">Google Play で見る →</span>
+          </a>
         </div>
       </div>
     </section>
@@ -386,7 +407,6 @@
         <a href="/privacy/">プライバシー</a>
         <a href="/licenses/">ライセンス</a>
       </nav>
-      <span>Texas, USA</span>
     </div>
   </footer>
 </body>
