@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Santa WANTED — Wellsteria LLC</title>
+  <meta name="description" content="Santa candidates wanted. Raise elves and reindeer, and spend a whole year delivering presents to children around the world in this relaxed management sim. iOS / Android.">
+  <link rel="canonical" href="https://wellsteria.com/en/santa/">
+  <link rel="alternate" hreflang="en" href="https://wellsteria.com/en/santa/">
+  <link rel="alternate" hreflang="ja" href="https://wellsteria.com/santa/">
+  <link rel="alternate" hreflang="x-default" href="https://wellsteria.com/en/santa/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Santa WANTED">
+  <meta property="og:description" content="Santa candidates wanted. Raise elves and reindeer, and spend a whole year delivering presents to children around the world.">
+  <meta property="og:url" content="https://wellsteria.com/en/santa/">
+  <meta property="og:site_name" content="Wellsteria LLC">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:image" content="https://wellsteria.com/en/santa/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Santa WANTED — Santa candidates wanted.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wellsteria.com/en/santa/og.png">
+  <style>
+    :root {
+      --ink: #201a17;
+      --ink-soft: #5c534d;
+      --ink-faint: #8a8079;
+      --paper: #faf7f2;
+      --surface: #ffffff;
+      --line: #ece6dd;
+      --accent: #b4302b;
+      --accent-deep: #8f231f;
+      --space: clamp(4.5rem, 3.5rem + 5vw, 8.5rem);
+      --wrap: 60rem;
+      --ease: cubic-bezier(0.16, 1, 0.3, 1);
+      --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { -webkit-text-size-adjust: 100%; }
+
+    body {
+      margin: 0;
+      font-family: var(--font);
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.75;
+      font-size: clamp(1rem, 0.96rem + 0.2vw, 1.0625rem);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .wrap {
+      width: 100%;
+      max-width: var(--wrap);
+      margin-inline: auto;
+      padding-inline: clamp(1.25rem, 5vw, 2.5rem);
+    }
+
+    a { color: var(--accent-deep); }
+
+    /* Header */
+    .site-head {
+      border-bottom: 1px solid var(--line);
+      background: color-mix(in srgb, var(--paper) 88%, transparent);
+      position: sticky;
+      top: 0;
+      backdrop-filter: saturate(120%) blur(8px);
+      z-index: 10;
+    }
+    .site-head .wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding-block: 1.1rem;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 0.55rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      text-decoration: none;
+      color: var(--ink);
+    }
+    .brand .mark {
+      width: 0.55rem;
+      height: 0.55rem;
+      border-radius: 50%;
+      background: var(--accent);
+      transform: translateY(-0.05rem);
+    }
+    .brand .llc { color: var(--ink-faint); font-weight: 500; }
+    .head-loc {
+      font-size: 0.82rem;
+      color: var(--ink-faint);
+      letter-spacing: 0.02em;
+    }
+    .head-right {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.9rem;
+    }
+    .lang {
+      font-size: 0.78rem;
+      letter-spacing: 0.02em;
+      text-decoration: none;
+      color: var(--ink-soft);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 0.3rem 0.7rem;
+      background: var(--surface);
+      transition: color 160ms var(--ease), border-color 160ms var(--ease);
+    }
+    .lang:hover, .lang:focus-visible { color: var(--accent-deep); border-color: var(--accent); }
+    @media (max-width: 30rem) { .head-loc { display: none; } }
+
+    /* Hero */
+    .hero { padding-block: clamp(4rem, 3rem + 8vw, 8rem) clamp(3rem, 2rem + 5vw, 6rem); }
+    .eyebrow {
+      display: inline-block;
+      font-size: 0.78rem;
+      letter-spacing: 0.16em;
+      color: var(--accent-deep);
+      font-weight: 600;
+      margin: 0 0 1.4rem;
+    }
+    .hero h1 {
+      font-size: clamp(2.6rem, 1.4rem + 6vw, 5rem);
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      font-weight: 700;
+      margin: 0 0 1.3rem;
+    }
+    .hero .lede {
+      font-size: clamp(1.15rem, 1.05rem + 0.6vw, 1.5rem);
+      color: var(--ink-soft);
+      max-width: 34ch;
+      margin: 0 0 2rem;
+      line-height: 1.6;
+    }
+
+    /* Sections */
+    section { padding-block: var(--space); }
+    section + section { border-top: 1px solid var(--line); }
+    .kicker {
+      font-size: 0.78rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      font-weight: 600;
+      margin: 0 0 1.6rem;
+    }
+    h2 {
+      font-size: clamp(1.6rem, 1.3rem + 1.4vw, 2.3rem);
+      letter-spacing: -0.01em;
+      line-height: 1.35;
+      margin: 0 0 0.4rem;
+      font-weight: 700;
+    }
+    .prose { max-width: 40em; color: var(--ink-soft); }
+    .prose p { margin: 0 0 1rem; }
+    .prose p:last-child { margin-bottom: 0; }
+
+    .status {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      color: var(--accent-deep);
+      background: color-mix(in srgb, var(--accent) 9%, transparent);
+      border: 1px solid color-mix(in srgb, var(--accent) 24%, transparent);
+      padding: 0.35rem 0.8rem;
+      border-radius: 999px;
+    }
+    .status .dot {
+      width: 0.45rem; height: 0.45rem;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    /* Feature cards */
+    .facts {
+      margin-top: 2.5rem;
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    }
+    .fact {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 1.1rem;
+      padding: clamp(1.4rem, 1.1rem + 1vw, 1.9rem);
+      box-shadow: 0 1px 2px rgba(32, 26, 23, 0.04), 0 18px 40px -28px rgba(32, 26, 23, 0.35);
+    }
+    .fact h3 {
+      font-size: 1.05rem;
+      margin: 0 0 0.5rem;
+      letter-spacing: -0.01em;
+      line-height: 1.5;
+    }
+    .fact p {
+      margin: 0;
+      color: var(--ink-soft);
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    /* Platforms */
+    .platforms {
+      margin-top: 2rem;
+      display: grid;
+      gap: 0.8rem;
+      max-width: 34rem;
+    }
+    .platform {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 0.9rem 1.2rem;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 0.8rem;
+    }
+    .platform .name { font-weight: 600; }
+    .platform .state { color: var(--ink-faint); font-size: 0.88rem; }
+    a.platform { color: var(--ink); text-decoration: none; transition: border-color var(--ease) 0.25s; }
+    a.platform .state { color: var(--accent-deep); font-weight: 600; }
+    a.platform:hover, a.platform:focus-visible { border-color: var(--accent); }
+
+    /* Store buttons (hero) */
+    .store-links { margin-top: 2rem; display: flex; flex-wrap: wrap; gap: 0.8rem; }
+    .store-link {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.75rem 1.4rem;
+      border-radius: 999px;
+      font-weight: 600;
+      text-decoration: none;
+      color: var(--paper);
+      background: var(--accent);
+      transition: background var(--ease) 0.25s;
+    }
+    .store-link:hover, .store-link:focus-visible { background: var(--accent-deep); color: var(--paper); }
+
+    /* Contact */
+    .contact .wrap { display: grid; gap: 1.3rem; }
+    .mail {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-size: clamp(1.2rem, 1rem + 1vw, 1.7rem);
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      text-decoration: none;
+      color: var(--ink);
+      width: fit-content;
+      border-bottom: 2px solid transparent;
+      transition: color var(--ease) 0.25s, border-color var(--ease) 0.25s;
+    }
+    .mail:hover, .mail:focus-visible {
+      color: var(--accent-deep);
+      border-color: var(--accent);
+      outline: none;
+    }
+    .mail .arrow { transition: transform var(--ease) 0.25s; }
+    .mail:hover .arrow, .mail:focus-visible .arrow { transform: translateX(0.2rem); }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--line);
+      padding-block: 2.5rem;
+      color: var(--ink-faint);
+      font-size: 0.85rem;
+    }
+    footer .wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem 1.2rem;
+      align-items: baseline;
+      justify-content: space-between;
+    }
+    .foot-nav { display: inline-flex; gap: 1.2rem; }
+    .foot-nav a {
+      color: var(--ink-faint);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: color var(--ease) 0.25s, border-color var(--ease) 0.25s;
+    }
+    .foot-nav a:hover, .foot-nav a:focus-visible { color: var(--accent-deep); border-color: var(--accent); outline: none; }
+
+    :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 3px; }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --ink: #f2ece4;
+        --ink-soft: #b7aea4;
+        --ink-faint: #857c72;
+        --paper: #16130f;
+        --surface: #1e1a15;
+        --line: #2c2620;
+        --accent: #e06a5a;
+        --accent-deep: #ef8577;
+      }
+      .fact { box-shadow: 0 1px 2px rgba(0,0,0,0.3), 0 22px 46px -28px rgba(0,0,0,0.7); }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap">
+      <a class="brand" href="/">
+        <span class="mark" aria-hidden="true"></span>
+        Wellsteria <span class="llc">LLC</span>
+      </a>
+      <span class="head-right">
+        <a class="lang" href="/santa/" hreflang="ja" lang="ja">日本語</a>
+      </span>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="wrap">
+        <span class="eyebrow">MANAGEMENT SIM</span>
+        <h1 id="hero-heading">Santa WANTED</h1>
+        <p class="lede">Santa candidates wanted.</p>
+        <div class="store-links">
+          <a class="store-link" href="https://apps.apple.com/app/id6790641606">Get it on the App Store</a>
+          <a class="store-link" href="https://play.google.com/store/apps/details?id=com.wellsteria.allyearsanta">Get it on Google Play</a>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="news-heading">
+      <div class="wrap">
+        <p class="kicker">News</p>
+        <h2 id="news-heading">Now available outside Japan.</h2>
+        <div class="prose">
+          <p><time datetime="2026-11-02">November 2, 2026</time> — Version 1.2.0 adds English, Chinese (Simplified and Traditional), Korean, and Spanish, and the game is now on the App Store and Google Play in countries and regions beyond Japan. It is not yet available in the EU/EEA, the United Kingdom, Switzerland, mainland China, or Vietnam.</p>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="about-heading">
+      <div class="wrap">
+        <p class="kicker">About</p>
+        <h2 id="about-heading">A whole year to deliver to the world.</h2>
+        <div class="prose">
+          <p>Recruit elves, reindeer, and dwarves, make presents, and deliver them to children all over the world. The in-game year starts in January. The first few months are for getting ready: train your team, grow materials, tune up the sleigh, and when the time comes, set off around the world.</p>
+          <p>Time in the game runs on its own clock. A week takes about a real day, a month about three days, and a full year roughly a month. There is no rushing it.</p>
+          <p>This isn&rsquo;t a game you play for hours a day. Check in for a few minutes in the morning and at night, then come back tomorrow. The seasons change at that kind of pace.</p>
+          <p>Make it through December and a new year begins. You carry over part of your team and progress and start again from January. The longer you play, the farther your deliveries reach.</p>
+        </div>
+
+        <div class="facts">
+          <div class="fact">
+            <h3>Train your team</h3>
+            <p>Raise elves, reindeer, and dwarves one by one. What you teach whom shapes how your year runs.</p>
+          </div>
+          <div class="fact">
+            <h3>Letters arrive</h3>
+            <p>Letters come in from children around the world&mdash;heartwarming wishes, and some that will make you laugh. Keep the ones you read as cards.</p>
+          </div>
+          <div class="fact">
+            <h3>Something new each month</h3>
+            <p>Every month a different troublemaker shows up, and each showdown is its own minigame&mdash;twelve kinds over the course of a year.</p>
+          </div>
+          <div class="fact">
+            <h3>Grow a Christmas tree</h3>
+            <p>Every delivery adds an ornament. A year&rsquo;s worth of work becomes one tree.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="platform-heading">
+      <div class="wrap">
+        <p class="kicker">Platforms</p>
+        <h2 id="platform-heading">Where to play</h2>
+        <div class="prose">
+          <p>Available on iOS / iPadOS and Android (free to play with in-app purchases). News is posted on X at <a href="https://x.com/santa_boshu">@santa_boshu</a> (mostly in Japanese) and on this page.</p>
+        </div>
+        <div class="platforms">
+          <a class="platform" href="https://apps.apple.com/app/id6790641606">
+            <span class="name">iOS / iPadOS</span>
+            <span class="state">App Store &rarr;</span>
+          </a>
+          <a class="platform" href="https://play.google.com/store/apps/details?id=com.wellsteria.allyearsanta">
+            <span class="name">Android</span>
+            <span class="state">Google Play &rarr;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" aria-labelledby="contact-heading">
+      <div class="wrap">
+        <p class="kicker">Contact</p>
+        <h2 id="contact-heading">Get in touch</h2>
+        <div class="prose">
+          <p>For questions about the game or to report a bug, please email us. See the <a href="/en/support/">support page</a> for FAQs and how we handle your data.</p>
+        </div>
+        <a class="mail" href="mailto:info@wellsteria.com">
+          info@wellsteria.com <span class="arrow" aria-hidden="true">&rarr;</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>&copy; 2026 Wellsteria LLC</span>
+      <nav class="foot-nav" aria-label="Footer">
+        <a href="/en/support/">Support</a>
+        <a href="/en/privacy/">Privacy</a>
+        <a href="/licenses/">Licenses</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
